@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Metallica - Músicas e Vídeos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)), url('https://logos-world.net/wp-content/uploads/2020/09/Metallica-Symbol.jpg');
+            background-attachment: fixed;
+            background-position: center;
+            background-size: cover;
+            font-family: 'Orbitron', sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        header {
+            font-family: 'Orbitron', sans-serif;
+            font-size: 3rem;
+            text-transform: uppercase;
+            text-align: center;
+            color: #dcdcdc;
+            text-shadow: 3px 3px 5px rgba(255, 255, 255, 0.6);
+            margin-top: 80px;
+            padding: 20px;
+            animation: slideDown 1s ease-out;
+        }
+
+        @keyframes slideDown {
+            0% {
+                transform: translateY(-50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        .chamada {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+            margin-top: 100px;
+            text-align: center;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .chamada iframe {
+            width: 80%;
+            max-width: 560px;
+            height: 315px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+        }
+
+        .chamada-texto h1 {
+            font-size: 2.5rem;
+            color: #fff;
+        }
+
+        .chamada-texto p {
+            font-size: 1.5rem;
+            color: #ddd;
+        }
+
+        .categoria-videos {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            padding: 40px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(50px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .categoria-videos a {
+            width: 250px;
+            margin: 20px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 4px solid #444;
+            box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .categoria-videos a:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(255, 255, 255, 0.8);
+        }
+
+        .categoria-videos img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 15px;
+        }
+
+        .top-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #000;
+            color: white;
+            border: none;
+            padding: 15px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: none;
+            animation: fadeIn 2s ease-in-out;
+        }
+
+        .top-button:hover {
+            background-color: #444;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            background-color: #222;
+            color: #fff;
+            font-size: 1.1rem;
+            box-shadow: 0px -2px 10px rgba(0, 0, 0, 0.5);
+        }
+
+        @media (max-width: 768px) {
+            .chamada {
+                flex-direction: column;
+                text-align: center;
+                padding: 20px;
+            }
+
+            iframe {
+                width: 100%;
+                height: auto;
+            }
+
+            .categoria-videos a {
+                width: 100%;
+                margin: 10px 0;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        Os maiores músicos de todos os tempos desde 1981 - 2024
+    </header>
+
+    <section class="chamada">
+        <div class="chamada-texto">
+            <h1>Metallica - Master of Puppets</h1>
+            <p>Assista ao vídeo principal</p>
+        </div>
+        <div>
+            <iframe src="https://www.youtube.com/embed/2f1Ny74_ou0?si=wmljywr6hymGwQwj" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
+        </div>
+    </section>
+
+    <section class="categoria">
+        <h2>Músicas e Vídeos</h2>
+        <div class="categoria-videos">
+            <a href="https://youtu.be/CD-E-LDc384?si=lYo1ZI85jdhThAWV">
+                <img src="https://img.youtube.com/vi/CD-E-LDc384/maxresdefault.jpg" />
+            </a>
+            <a href="https://youtu.be/B_HSa1dEL9s?si=6QmNSyysl25XvL2_">
+                <img src="https://img.youtube.com/vi/B_HSa1dEL9s/maxresdefault.jpg" />
+            </a>
+            <a href="https://youtu.be/boanuwUMNNQ?si=-oXrRfxRXBbBlv8Q">
+                <img src="https://img.youtube.com/vi/boanuwUMNNQ/maxresdefault.jpg" />
+            </a>
+            <a href="https://youtu.be/FLTchCiC0T0?si=dUITPQyXMFu_VeJb">
+                <img src="https://img.youtube.com/vi/FLTchCiC0T0/maxresdefault.jpg" />
+            </a>
+            <a href="https://youtu.be/WM8bTdBs-cw?si=ngGrOxhzM2YhiLVK">
+                <img src="https://img.youtube.com/vi/WM8bTdBs-cw/maxresdefault.jpg" />
+            </a>
+        </div>
+    </section>
+
+    <footer>
+        <p>Site desenvolvido por Isaac</p>
+    </footer>
+
+    <button class="top-button" onclick="scrollToTop()">↑</button>
+
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+
+        window.onscroll = function () {
+            let button = document.querySelector('.top-button');
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                button.style.display = "block";
+            } else {
+                button.style.display = "none";
+            }
+        };
+    </script>
+
+</body>
+
+</html>
